@@ -38,3 +38,15 @@ def insertion_sort(arr:list):  #Card wala sorting , inserting new element at the
     return arr
 
 print(insertion_sort(arr))
+
+
+def bubble_sort_1(arr):
+    if not arr:
+        return None
+    for i in range(0,len(arr)):
+        for j in range (len(arr)-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j],arr[j+1] = arr[j+1],arr[j]
+    print(arr)
+    return arr
+bubble_sort_1(arr)
